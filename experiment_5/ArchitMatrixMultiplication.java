@@ -1,9 +1,4 @@
-// Java program to multiply two matrices of any size.
-
-import java.util.*;
-
 class ArchitMatrixMultiplication {
-
     // Function to print Matrix
     static void printMatrix(int M[][],int rowSize, int colSize) {
         for (int i = 0; i < rowSize; i++) {
@@ -12,9 +7,7 @@ class ArchitMatrixMultiplication {
             System.out.println();
         }
     }
-
-    // Function to multiply
-    // two matrices A[][] and B[][]
+    // Function to multiply two matrices A[][] and B[][]
     static void multiplyMatrix(int row1, int col1, int A[][],int row2, int col2, int B[][]) {
         int i, j, k;
 
