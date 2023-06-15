@@ -3,17 +3,20 @@ import java.sql.DriverManager;
 import java.sql.Statement;
 import javax.swing.JOptionPane;
 
-public class SuryanshSqlConnectivity {
+public class ArchitSqlConnectivity {
     
     public static void main(String[] args) throws Exception {
         try {
+
+            // Class.forName("com.mysql.jdbc.Driver"); 
             String url = "jdbc:mysql://localhost:3306/";
 
             String databaseName = "mydatabase";
             String userName = "root";
-            String password = "root";
+            String password = "";
+
+             
             
-            Class.forName("com.mysql.jdbc.Driver");
             Connection connection = DriverManager.getConnection(url,userName, password);
     
             String sql = "CREATE DATABASE " + databaseName;
